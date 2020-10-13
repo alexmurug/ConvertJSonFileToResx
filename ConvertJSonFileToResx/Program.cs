@@ -28,7 +28,7 @@ namespace ConvertJSonFileToResx
 
             using (StreamWriter file = new StreamWriter(configuration.GetSection("saveKeysForWebConfigPath").Value))
                 foreach (var entry in values)
-                    file.Write($@"{entry.Key},");
+                    file.Write($@",{entry.Key}");
 
 
 
